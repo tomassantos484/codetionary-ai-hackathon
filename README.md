@@ -1,2 +1,2 @@
 # ai-hackathon
-Repo for AI Hackathon Project, 03/16/2024
+Repo for AI Hackathon Project, **Codetionary** 03/16/2024
