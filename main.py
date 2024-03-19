@@ -56,7 +56,7 @@ async def roadmap(interaction: discord.Interaction, name: str, career_path: str,
         else:
             # If the statement is too long, use an embed or split the message
             embed = Embed(title="Your Learning Roadmap", description="Here's your personalized learning roadmap:")
-            chunks = [statement[i:i+1500] for i in range(0, len(statement), 1500)]
+            chunks = [statement[i:i+1024] for i in range(0, len(statement), 1024)]
             for i, chunk in enumerate(chunks, start=1):
                 embed.add_field(name=f"Part {i}", value=chunk, inline=False)
             await interaction.followup.send(embed=embed)
